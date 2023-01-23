@@ -1,0 +1,86 @@
+.products_category{
+    .owl-carousel {
+        .owl-nav {
+            margin-top: 0px;
+            text-align: center;
+            position:absolute;
+            top: calc(50% - 23px);
+            width: 100%;
+        }
+        .owl-nav button.owl-prev{
+            position:absolute;
+            left: -20px;
+        }
+        .owl-nav button.owl-next{
+            position: absolute;
+            right: -20px;
+        }
+    } 
+   .product_grid_container{
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    // gap:2rem;
+
+    // new
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+    @media (min-width:497px) and (max-width:992px) {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    @media (min-width:361px) and (max-width:496px) {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    @media (min-width:320px) and (max-width:360px) {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    @media(max-width:319px) {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .product_card_slider{
+       .carousel-item{
+        object-fit: cover;
+        aspect-ratio: 4/3;
+        img{
+            width:100%;
+            height:100%;
+        }
+       }
+    }
+   }
+ 
+    @media (min-width:768px) {
+        .product_grid_container{
+            // grid-template-columns: auto auto auto auto auto;
+            // display: grid;
+            // column-gap: 1.5rem;
+            // gap:2rem;
+            // row-gap: 2rem;
+            // -webkit-column-width: 12vw;
+            // -moz-column-width: 12vw;
+            // column-width: 12vw;
+            .grid-item{
+                // -webkit-column-break-inside: avoid;
+                // -moz-column-break-inside:avoid;
+                // break-inside: avoid;
+            }
+            .product_detail_close_btn{
+                position: absolute;
+                top:1rem;
+                right:2rem;
+            }
+            
+        }
+        
+    }
+    .product_list{
+            .hide{
+             display: none;
+            }
+            .active {
+                display: block;
+            }
+        
+    }
+}
