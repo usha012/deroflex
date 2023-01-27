@@ -23347,6 +23347,7 @@ ol.commentlist li .star-rating {
   transition: all 0.2s linear;
   visibility: hidden;
   opacity: 0;
+  box-shadow: -12px 10px 36px -4px #e0dbd9;
 }
 .header_style_2 nav .header_nav ul li .product_sub_menu .micro_menu {
   -moz-column-gap: 25px;

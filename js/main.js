@@ -72,13 +72,13 @@ $('.clickme2 a').click(function(){
   $('#'+tagid).addClass('active').removeClass('hide');
 });
 
-$('.clickme3 a').click(function(){
-  $('.clickme3 a').removeClass('activelink');
-  $(this).addClass('activelink');
-  var tagid = $(this).data('tag');
-  $('.list').removeClass('active').addClass('hide');
-  $('#'+tagid).addClass('active').removeClass('hide');
-});
+// $('.clickme3 a').click(function(){
+//   $('.clickme3 a').removeClass('activelink');
+//   $(this).addClass('activelink');
+//   var tagid = $(this).data('tag');
+//   $('.list').removeClass('active').addClass('hide');
+//   $('#'+tagid).addClass('active').removeClass('hide');
+// });
 
 // initializing default size by passing the id  
 document.addEventListener('DOMContentLoaded', () => {
