@@ -171,7 +171,7 @@ const redirect = (productType, id) => {
       url = "../new_products/Flexible_Hose/Flexible_Hose.html" + (id ? "?id="+id : "")
     break;
     case "customized":
-      url = "../new_products/Customized/Customized.html" + (id ? "?id="+id : "")
+      url = "./new_products/Customized/Customized.html" + (id ? "?id="+id : "")
     break;
   }
   
