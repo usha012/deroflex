@@ -50,14 +50,14 @@
                 </div>
                 <diV class="col-lg-8">
                     <div class="owl-carousel four_item_carousel owl-theme">
-                        <div class="item text-center clickme"  onclick="displayCard('one');">
+                        <d iv class="item text-center clickme"  onclick="displayCard('one');">
                           <a class="active" href="#" data-tag="one">
                             <div class="pro_50 m-auto">
                               <img src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/pad.png" class="img-fluid"/>
                             </div>
                           </a>
                             <p class="mt-1 mb-1 text_secondary fs_10">Pad </p> 
-                        </div> 
+                        </d> 
                         <div class="item text-center clickme"  onclick="displayCard('two');">
                           <a class="" href="#" data-tag="two">
                             <div class="pro_50 m-auto">
@@ -297,14 +297,30 @@
       images: [
         "../../images/upgrade_products/Vibration_Isolation/pad/Bridge_bearing_pad/p1.jpg"
       ],
-      divId: "one"
+      divId: "one",
+      list1:"Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
+      list2:"Easy field installation",
+      list3:"Design load of the bearing is equivalent to 10 M Pa",
+      list4:"Steel laminates used in the bearings are in conformation with the IS : 2062 standards",
+      list5:"Offers highest level of sound attenuation and vibration controller",
+      list6:"Dimension can also be designed as per requirements",
+      brand:"Brand :- DEROFLEX",
+      shape:"Shape :- Square ",
+      materials:"Materials :- Neoprene ",
+      size:"Size :-  3’’ x 3’’ | Max - 18’’ x 18’",
+      hardness:"Hardness :- 60% - 65%",
+      color:"Colour :- Black",
+
+
     },
     { 
       id: "card_"+ Math.ceil(Math.random()*1000000000),
       title: "Custom Design Pad",
       description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
       images: ["../../images/upgrade_products/Vibration_Isolation/pad/Custom_design_pad/p1.jpg"],
-      divId: "one"
+      
+     
+      divId: "one",
     },
 
 
@@ -504,19 +520,37 @@
       </div>
       
       <!-- quick view modal -->
-        <div class="modal fade" id="exampleModal${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal fade product_view_modal" id="exampleModal${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content br_6">
-              <div class="modal-body pb-6 pt-6 text-left">
+              <div class="modal-body pb-6 pt-6 text-left pe-6 ps-6">
                 <button type="button" class="btn-close product_detail_close_btn" data-bs-dismiss="modal" aria-label="Close"></button>
-                  <div class="row">
-                    <div class="col-lg-auto col-sm-auto">
-                      <div class="pro_200">
-                        <img src="${data?.[i]?.images?.[0]}" alt="${data?.[i]?.title}" />
-                      </div>
+                  <div class="row mb-4">
+                    <div class="col-lg-12 text-center">
+                      <h3>${data?.[i]?.title}</h3>
+                      <div class="pro_200 m-auto">
+                          <img src="${data?.[i]?.images?.[0]}" alt="${data?.[i]?.title}" />
+                        </div>
                     </div>
-                    <div class="col-lg-8 col-sm-8">
-                      <h3>${data?.[i]?.description}</h3>
+                  </div> 
+                  <div class="row mx-0">
+                   
+                    <div class="col-lg-12 col-sm-8">
+                      <p class="fs_18 fw_500">Features and Benefits</p>
+                      <ul>
+                        <li>${data?.[i]?.list1}</li>
+                        <li>${data?.[i]?.list2}</li>
+                        <li>${data?.[i]?.list3}</li>
+                        <li>${data?.[i]?.list4}</li>
+                        <li>${data?.[i]?.list5}</li>
+                        <li>${data?.[i]?.list6}</li>
+                      </ul>
+                      <p class="mb-1">${data?.[i]?.brand}</p>
+                      <p class="mb-1">${data?.[i]?.shape}</p>
+                      <p class="mb-1">${data?.[i]?.materials}</p>
+                      <p class="mb-1">${data?.[i]?.size}</p>
+                      <p class="mb-1">${data?.[i]?.hardness}</p>
+                      <p class="mb-1">${data?.[i]?.color}</p>
                     </div>
                   </div>
                 </div>
