@@ -159,19 +159,19 @@ const redirect = (productType, id) => {
   let url = ""
   switch(productType) {
     case "flexiblePipeSystem":
-      url = "/new_products/Flexible_Pipe_System/FlexiblePipeSystem.html" + (id ? "?id="+id : "")
+      url = "deroflex/new_products/Flexible_Pipe_System/FlexiblePipeSystem.html" + (id ? "?id="+id : "")
       break;
     case "vibrationIsolation":
-      url = "/new_products/Vibration_Isolation/Vibration_Isolation.html" + (id ? "?id="+id : "")
+      url = "deroflex/new_products/Vibration_Isolation/Vibration_Isolation.html" + (id ? "?id="+id : "")
       break;
     case "mechanicalSeal":
-      url = "/new_products/Mechanical_Seal/Mechanical_Seal.html" + (id ? "?id="+id : "")
+      url = "deroflex/new_products/Mechanical_Seal/Mechanical_Seal.html" + (id ? "?id="+id : "")
     break;
     case "flexibleHose":
-      url = "/new_products/Flexible_Hose/Flexible_Hose.html" + (id ? "?id="+id : "")
+      url = "deroflex/new_products/Flexible_Hose/Flexible_Hose.html" + (id ? "?id="+id : "")
     break;
     case "customized":
-      url = "/new_products/Customized/Customized.html" + (id ? "?id="+id : "")
+      url = "deroflex/new_products/Customized/Customized.html" + (id ? "?id="+id : "")
     break;
   }
   
