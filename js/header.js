@@ -162,7 +162,7 @@ const redirect = (productType, id) => {
       url = "deroflex/new_products/Flexible_Pipe_System/FlexiblePipeSystem.html" + (id ? "?id="+id : "")
       break;
     case "vibrationIsolation":
-      url = "deroflex/new_products/Vibration_Isolation/Vibration_Isolation.html" + (id ? "?id="+id : "")
+      url = "/new_products/Vibration_Isolation/Vibration_Isolation.html" + (id ? "?id="+id : "")
       break;
     case "mechanicalSeal":
       url = "deroflex/new_products/Mechanical_Seal/Mechanical_Seal.html" + (id ? "?id="+id : "")
