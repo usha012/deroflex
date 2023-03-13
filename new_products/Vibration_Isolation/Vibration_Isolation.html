@@ -1,202 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Industry</title>
-    
+
     <!-- owl carousel cdn -->
     <!-- owl css cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- owl theme css cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- FONTAWESOME STYLE SHEET -->
     <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css" /> -->
-     <link rel="stylesheet" type="text/css" href="./css/fontawesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/fontawesome/css/font-awesome.min.css"
+    />
     <!-- animate style cdn -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
     <!-- bootstrap 5 css cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <!-- custom style sheet -->
     <!-- <link rel="stylesheet" href="../../sass/main.css"> -->
-    <link rel="stylesheet" href="../../sass/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../sass/main.css" />
+  </head>
+  <body>
+    <!-- new header -->
+    <div id="main_header"></div>
+    <!-- end-new header -->
 
-<!-- new header -->
-<div id="main_header"></div>
-<!-- end-new header -->
-
-<div class="flexible_pipe_system products_category">
-
-    <!-- top header -->
-    <section>
+    <div class="flexible_pipe_system products_category">
+      <!-- top header -->
+      <section>
         <div class="container bg_gray_200">
-            <div class="row mx-0 product_top_header ps-3 pe-3 pt-5 pb-5">
-                <div class="col-lg-4">
-                    <p class="mb-0 fs_12">
-                     Lorem ipsum dolor sit, us, debitis qui sed totam autem quam sapiente!
-        
-                    </p>
-        
-                </div>
-                <diV class="col-lg-8">
-                    <div class="owl-carousel four_item_carousel owl-theme">
-                        <d iv class="item text-center clickme"  onclick="displayCard('one');">
-                          <a class="active" href="#" data-tag="one">
-                            <div class="pro_50 m-auto">
-                              <img src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/pad.png" class="img-fluid"/>
-                            </div>
-                          </a>
-                            <p class="mt-1 mb-1 text_secondary fs_10">Pad </p> 
-                        </d> 
-                        <div class="item text-center clickme"  onclick="displayCard('two');">
-                          <a class="" href="#" data-tag="two">
-                            <div class="pro_50 m-auto">
-                             
-                                <img src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/mount.png" class="img-fluid"/>
-                          
-                            </div>
-                          </a>  
-                            <p class="mt-1 mb-1 text_secondary fs_10">Rubber and Metal Bonded anti vibration mounded </p> 
-                        </div>
-                        <div class="item text-center clickme"  onclick="displayCard('three');">
-                          <a class="" href="#" data-tag="three">
-                            <div class="pro_50 m-auto">
-                                <img src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/spring_isolater.png" class="img-fluid"/>
-                                
-                            </div> 
-                          </a> 
-                            <p class="mt-1 mb-1 text_secondary fs_10">Spring Based Vibration Isolator  </p> 
-                        </div>
-                        <div class="item text-center clickme"  onclick="displayCard('four');" >
-                          <a class="" href="#" data-tag="four">
-                            <div class="pro_50 m-auto">
-                                <img src="../../images/upgrade_products/Product_Header_Images/Flexible_Pipe_System/pneumatic_air_bellow.png" class="img-fluid"/>    
-                            </div>
-                          </a>  
-                            <p class="mt-1 mb-1 text_secondary fs_10">Riser Isolator Support </p> 
-                        </div>
-                        <div class="item text-center clickme" onclick="displayCard('five');">
-                          <a class="" href="#" data-tag="five">
-                            <div class="pro_50 m-auto">
-                                <img src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/wire_rope.png" class="img-fluid"/>
-                                
-                            </div>  
-                          </a>
-                            <p class="mt-1 mb-1 text_secondary fs_10">Wire Rope Suspension System  </p> 
-                        </div>
-                        
-                    </div>
-                </diV>     
+          <div class="row mx-0 product_top_header ps-3 pe-3 pt-5 pb-5">
+            <div class="col-lg-4">
+              <p class="mb-0 fs_12">
+                Lorem ipsum dolor sit, us, debitis qui sed totam autem quam
+                sapiente!
+              </p>
             </div>
-        </div>    
-    </section>
-    <!-- products list -->
-    <section class="product_list">
-      <!-- container-1 -->
-        <div class="container px-0 py-4 list active container-list" id='one'>
-            <div class="product_grid_container product_grid_container_one"></div>
+            <div class="col-lg-8">
+              <div class="owl-carousel four_item_carousel owl-theme">
+                <d
+                  iv
+                  class="item text-center clickme"
+                  onclick="displayCard('one');"
+                >
+                  <a class="active" href="#" data-tag="one">
+                    <div class="pro_50 m-auto">
+                      <img
+                        src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/pad.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </a>
+                  <p class="mt-1 mb-1 text_secondary fs_10">Pad</p>
+                </d>
+                <div
+                  class="item text-center clickme"
+                  onclick="displayCard('two');"
+                >
+                  <a class="" href="#" data-tag="two">
+                    <div class="pro_50 m-auto">
+                      <img
+                        src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/mount.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </a>
+                  <p class="mt-1 mb-1 text_secondary fs_10">
+                    Rubber and Metal Bonded anti vibration mounded
+                  </p>
+                </div>
+                <div
+                  class="item text-center clickme"
+                  onclick="displayCard('three');"
+                >
+                  <a class="" href="#" data-tag="three">
+                    <div class="pro_50 m-auto">
+                      <img
+                        src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/spring_isolater.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </a>
+                  <p class="mt-1 mb-1 text_secondary fs_10">
+                    Spring Based Vibration Isolator
+                  </p>
+                </div>
+                <div
+                  class="item text-center clickme"
+                  onclick="displayCard('four');"
+                >
+                  <a class="" href="#" data-tag="four">
+                    <div class="pro_50 m-auto">
+                      <img
+                        src="../../images/upgrade_products/Product_Header_Images/Flexible_Pipe_System/pneumatic_air_bellow.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </a>
+                  <p class="mt-1 mb-1 text_secondary fs_10">
+                    Riser Isolator Support
+                  </p>
+                </div>
+                <div
+                  class="item text-center clickme"
+                  onclick="displayCard('five');"
+                >
+                  <a class="" href="#" data-tag="five">
+                    <div class="pro_50 m-auto">
+                      <img
+                        src="../../images/upgrade_products/Product_Header_Images/Vibration_Isolation/wire_rope.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </a>
+                  <p class="mt-1 mb-1 text_secondary fs_10">
+                    Wire Rope Suspension System
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- products list -->
+      <section class="product_list">
+        <!-- container-1 -->
+        <div class="container px-0 py-4 list active container-list" id="one">
+          <div class="product_grid_container product_grid_container_one"></div>
         </div>
 
         <!-- container -2 -->
-        <div class="container px-0 py-4 list hide container-list" id='two'>
-          <div class=" product_grid_container product_grid_container_two"></div>
+        <div class="container px-0 py-4 list hide container-list" id="two">
+          <div class="product_grid_container product_grid_container_two"></div>
         </div>
 
         <!-- container -3 -->
-        <div class="container px-0 py-4 list hide container-list" id='three'>
-          <div class=" product_grid_container product_grid_container_three"></div>
+        <div class="container px-0 py-4 list hide container-list" id="three">
+          <div
+            class="product_grid_container product_grid_container_three"
+          ></div>
         </div>
 
         <!-- container -4 -->
-        <div class="container px-0 py-4 list hide container-list" id='four'>
-          <div class=" product_grid_container product_grid_container_four"></div>
+        <div class="container px-0 py-4 list hide container-list" id="four">
+          <div class="product_grid_container product_grid_container_four"></div>
         </div>
 
         <!-- container -5 -->
-        <div class="container px-0 py-4 list hide container-list" id='five'>
-          <div class=" product_grid_container product_grid_container_five"></div>
+        <div class="container px-0 py-4 list hide container-list" id="five">
+          <div class="product_grid_container product_grid_container_five"></div>
         </div>
+      </section>
+    </div>
 
-    </section>
-</div>
-
-    
-
- 
-<!-- FOOTER START -->
-<footer class="site-footer footer-large footer-dark text-white footer-style1" >
-    <!-- FOOTER BLOCKES START -->  
-    <div class="footer-top bg-no-repeat bg-bottom-right" style="background-image:url(images/background/footer-bg.png)">
+    <!-- FOOTER START -->
+    <footer
+      class="site-footer footer-large footer-dark text-white footer-style1"
+    >
+      <!-- FOOTER BLOCKES START -->
+      <div
+        class="footer-top bg-no-repeat bg-bottom-right"
+        style="background-image: url(images/background/footer-bg.png)"
+      >
         <div class="container">
-            <div class="row">
-            
-                <div class="col-lg-5 col-md-12 col-sm-12"> 
-                    <div class="footer-h-left"> 
-                        <div class="widget widget_about">
-                            <div class="logo-footer clearfix">
-                                <a href="index.html"><img src="images/logo-light.png" alt="" ></a>
-                            </div>
-                            <p>Over 15 year experience and knowledge international standards technologicaly changes our industrial systems, we are dedicated to provides the best solutions to our valued customers there are many variation solution we makes long-term investments goal in global companies in different sectors, mainly in USA and other countries</p>
-                            </div>
-                        <div class="widget recent-posts-entry">
-                            <ul class="widget_address"> 
-                                <li><i class="fa fa-map-marker"></i>San Francisco City Hall, San Francisco, CA</li>
-                                <li><i class="fa fa-envelope"></i>contact123@gmail.com</li>
-                                <li> <i class="fa fa-phone"></i>(654) 321-7654 </li>
-                            </ul>  
-                        </div>
-                        <ul class="social-icons  wt-social-links footer-social-icon">
-                            <li><a href="javascript:void(0);" class="fa fa-google"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                        </ul> 
-                    </div>                              
-                    
-                </div> 
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="footer-h-left">
+                <div class="widget widget_about">
+                  <div class="logo-footer clearfix">
+                    <a href="index.html"
+                      ><img src="images/logo-light.png" alt=""
+                    /></a>
+                  </div>
+                  <p>
+                    Over 15 year experience and knowledge international
+                    standards technologicaly changes our industrial systems, we
+                    are dedicated to provides the best solutions to our valued
+                    customers there are many variation solution we makes
+                    long-term investments goal in global companies in different
+                    sectors, mainly in USA and other countries
+                  </p>
+                </div>
+                <div class="widget recent-posts-entry">
+                  <ul class="widget_address">
+                    <li>
+                      <i class="fa fa-map-marker"></i>San Francisco City Hall,
+                      San Francisco, CA
+                    </li>
+                    <li><i class="fa fa-envelope"></i>contact123@gmail.com</li>
+                    <li><i class="fa fa-phone"></i>(654) 321-7654</li>
+                  </ul>
+                </div>
+                <ul class="social-icons wt-social-links footer-social-icon">
+                  <li>
+                    <a href="javascript:void(0);" class="fa fa-google"></a>
+                  </li>
+                  <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                  <li>
+                    <a href="javascript:void(0);" class="fa fa-facebook"></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="fa fa-twitter"></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="fa fa-linkedin"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                    <div class="row footer-h-right">
-                        <div class="col-lg-5 col-md-4">
-                            <div class="widget widget_services">
-                                <h3 class="widget-title">Useful links</h3>
-                                <ul>
-                                    <li><a href="about-1.html">About</a></li>
-                                    <li><a href="our-prices.html">Pricing Plan </a></li>
-                                    <li><a href="Faq.html">FAQ</a></li>
-                                    <li><a href="team-single.html">Our Team </a></li>
-                                    <li><a href="services-1.html">Services </a></li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+              <div class="row footer-h-right">
+                <div class="col-lg-5 col-md-4">
+                  <div class="widget widget_services">
+                    <h3 class="widget-title">Useful links</h3>
+                    <ul>
+                      <li><a href="about-1.html">About</a></li>
+                      <li><a href="our-prices.html">Pricing Plan </a></li>
+                      <li><a href="Faq.html">FAQ</a></li>
+                      <li><a href="team-single.html">Our Team </a></li>
+                      <li><a href="services-1.html">Services </a></li>
+                    </ul>
+                  </div>
+                </div>
 
-                        <div class="col-lg-7 col-md-8">
-                            <div class="widget widget_services">
-                                <h3 class="widget-title">Our Services</h3>
-                                <!-- <ul>
+                <div class="col-lg-7 col-md-8">
+                  <div class="widget widget_services">
+                    <h3 class="widget-title">Our Services</h3>
+                    <!-- <ul>
                                     <li><a href="s-oilgas.html">Oil & Gas Factory</a><a href="s-chemical.html">Chemical Research</a></li>
                                     <li><a href="s-chemical.html">Chemical Research</a><a href="s-agricultural.html">Agricultural</a></li>
                                     <li><a href="s-mechanical.html">Mechanical</a><a href="s-agricultural.html">Agricultural </a></li>
                                     <li><a href="s-civil.html">Manufacturing</a><a href="s-civil.html">Civil Engineering</a></li>
                                     <li><a href="s-automotive.html">Mechanical </a><a href="s-automotive.html">Auto Motive  </a></li>
                                 </ul> -->
-                            </div>
-                        </div>                                
-                    
-                    </div>
-                    
-                    <!-- <div class="widget widget_newsletter">
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="widget widget_newsletter">
                         <h3 class="widget-title">Newsletter</h3>
                             <p>Subscribe to our newsletter to receive latest news on our services.</p>
                             <div class="newsletter-input">
@@ -208,33 +280,32 @@
                                 </div>
                             </div>
                     </div> -->
-                    
-                </div> 
-
             </div>
+          </div>
         </div>
-    </div>
-    <!-- FOOTER COPYRIGHT -->
-    
-    <div class="footer-bottom">
+      </div>
+      <!-- FOOTER COPYRIGHT -->
+
+      <div class="footer-bottom">
         <div class="container">
-        <div class="wt-footer-bot-left d-flex justify-content-between">
-            <span class="copyrights-text">Copyright © 2020 <span class="site-text-primary">Deroflex</span></span>
-            <ul class="copyrights-nav"> 
-                <li><a href="javascript:void(0);">Terms  &amp; Condition</a></li>
-                <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                <li><a href="contact-1.html">Contact Us</a></li>
-            </ul>     
+          <div class="wt-footer-bot-left d-flex justify-content-between">
+            <span class="copyrights-text"
+              >Copyright © 2020
+              <span class="site-text-primary">Deroflex</span></span
+            >
+            <ul class="copyrights-nav">
+              <li><a href="javascript:void(0);">Terms &amp; Condition</a></li>
+              <li><a href="javascript:void(0);">Privacy Policy</a></li>
+              <li><a href="contact-1.html">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-        </div>   
-    </div>  
-</footer>
-<!-- FOOTER END --> 
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
 
-    
-</body>
-
-<!-- <script>
+  <!-- <script>
   const data = [
     { 
       id: "one", 
@@ -252,30 +323,31 @@
   ]
 </script> -->
 
-<script>
-  const displayCard = id => {
-    $('.container-list').removeClass('active').addClass('hide');
-    $('#'+id).addClass('active').removeClass('hide');
-  }
+  <script>
+    const displayCard = (id) => {
+      $(".container-list").removeClass("active").addClass("hide");
+      $("#" + id)
+        .addClass("active")
+        .removeClass("hide");
+    };
 
-  const getCaraouselImages = (imgList, id) => {
-    let imgData = ""
+    const getCaraouselImages = (imgList, id) => {
+      let imgData = "";
 
-    for(let i = 0; i<imgList?.length; i++){
-      imgData += `
-        <div class="carousel-item ${i===0? "active":""}">
+      for (let i = 0; i < imgList?.length; i++) {
+        imgData += `
+        <div class="carousel-item ${i === 0 ? "active" : ""}">
           <img src="${imgList[i]}" class="d-block" alt="${imgList[i]}" />
-        </div>`
-    }
+        </div>`;
+      }
 
-    return `<div id="${id}" class="carousel slide product_card_slider" data-bs-ride="carousel">
+      return `<div id="${id}" class="carousel slide product_card_slider" data-bs-ride="carousel">
         <div class="carousel-inner">
           ${imgData}
         </div>
         ${
-          imgList?.length>1 
-          ?
-          `<button class="carousel-control-prev" type="button" data-bs-target="#${id}" data-bs-slide="prev">
+          imgList?.length > 1
+            ? `<button class="carousel-control-prev" type="button" data-bs-target="#${id}" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -283,234 +355,254 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>`
-          :
-          ""
+            : ""
         }
-      </div>`
-  }
+      </div>`;
+    };
 
-  const data = [
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Bridge Bearing Pad",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/pad/Bridge_bearing_pad/p1.jpg"
-      ],
-      divId: "one",
-      list1:"Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
-      list2:"Easy field installation",
-      list3:"Design load of the bearing is equivalent to 10 M Pa",
-      list4:"Steel laminates used in the bearings are in conformation with the IS : 2062 standards",
-      list5:"Offers highest level of sound attenuation and vibration controller",
-      list6:"Dimension can also be designed as per requirements",
-      brand:"Brand :- DEROFLEX",
-      shape:"Shape :- Square ",
-      materials:"Materials :- Neoprene ",
-      size:"Size :-  3’’ x 3’’ | Max - 18’’ x 18’",
-      hardness:"Hardness :- 60% - 65%",
-      color:"Colour :- Black",
+    const data = [
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Bridge Bearing Pad",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/pad/Bridge_bearing_pad/p1.jpg",
+        ],
+        divId: "one",
+        list1:
+          "Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
+        list2: "Easy field installation",
+        list3: "Design load of the bearing is equivalent to 10 M Pa",
+        list4:
+          "Steel laminates used in the bearings are in conformation with the IS : 2062 standards",
+        list5:
+          "Offers highest level of sound attenuation and vibration controller",
+        list6: "Dimension can also be designed as per requirements",
+        brand: "Brand",
+        shape: "Shape",
+        materials: "Materials",
+        size: "Size",
+        hardness: "Hardness",
+        color: "Colour",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Custom Design Pad",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/pad/Custom_design_pad/p1.jpg",
+        ],
 
+        divId: "one",
+      },
 
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Custom Design Pad",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: ["../../images/upgrade_products/Vibration_Isolation/pad/Custom_design_pad/p1.jpg"],
-      
-     
-      divId: "one",
-    },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Genset Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Genset_mounts/p1.jpg",
+        ],
+        divId: "two",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Sandwich Mounting",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Sandwich_Mounting/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Sandwich_Mounting/p2.jpeg",
+        ],
+        divId: "two",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Metalastik Cushy Foot Mounting",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Metalastik_cushy_foot_Mounting/p1.jpeg",
+        ],
+        divId: "two",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "U Shear Mount",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/U_Shear_mount/p1.jpeg",
+        ],
+        divId: "two",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Metalastik Rubber Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Metalastik_Rubber_Mounts/p2.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Metalastik_Rubber_Mounts/p2.jpg",
+        ],
+        divId: "two",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Circular Vibration Mounting ",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Circular_Vibration_Mounting/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Circular_Vibration_Mounting/p2.jpg",
+        ],
+        divId: "two",
+      },
 
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Spring Hangers",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Spring_Hangers/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Spring_Hangers/p2.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Rubber Close Spring Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Rubber_close_spring_mounts/p1.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Enclosed Spring Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Enclosed_Spring_mounts/p1.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Open Spring Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          // "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_mounts/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_mounts/p2.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Open Spring Damper",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_damper/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_damper/p2.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Heavy Duty Spring Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/heavy_duty_spring _mounts/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/heavy_duty_spring _mounts/p2.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Restrained Spring Mounts",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Restrained_Spring_Mounts/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Restrained_Spring_Mounts/p2.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Housed Spring Mounting",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Housed_spring_mounting/p1.jpg",
+          "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Housed_spring_mounting/p2.jpg",
+        ],
+        divId: "three",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Close Spring Isolator",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Flexible_pipe_System/Fabric_Bellow/Fabric_Expansion_Joint/p2.jpg",
+        ],
+        divId: "three",
+      },
 
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Genset Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Genset_mounts/p1.jpg"
-      ],
-      divId: "two"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Sandwich Mounting",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Sandwich_Mounting/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Sandwich_Mounting/p2.jpeg"
-      ],
-      divId: "two"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Metalastik Cushy Foot Mounting",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Metalastik_cushy_foot_Mounting/p1.jpeg"
-      ],
-      divId: "two"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "U Shear Mount",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/U_Shear_mount/p1.jpeg"
-      ],
-      divId: "two"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Metalastik Rubber Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Metalastik_Rubber_Mounts/p2.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Metalastik_Rubber_Mounts/p2.jpg"
-      ],
-      divId: "two"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Circular Vibration Mounting ",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Circular_Vibration_Mounting/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Circular_Vibration_Mounting/p2.jpg"
-      ],
-      divId: "two"
-    },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Riser Isolator Support",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Bellow/p1.jpg",
+          "../../images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Bellow/p2.jpg",
+        ],
+        divId: "four",
+      },
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Close Spring Isolator",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Flexible_pipe_System/Fabric_Bellow/Fabric_Expansion_Joint/p2.jpg",
+        ],
+        divId: "four",
+      },
 
+      {
+        id: "card_" + Math.ceil(Math.random() * 1000000000),
+        title: "Wire Rope Suspension System",
+        description:
+          "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        images: [
+          "../../images/upgrade_products/Vibration_Isolation/Wire_Rope_Suspension_System/p1.jpg",
+        ],
+        divId: "five",
+      },
+    ];
 
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Spring Hangers",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Spring_Hangers/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Spring_Hangers/p2.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Rubber Close Spring Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Rubber_close_spring_mounts/p1.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Enclosed Spring Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Enclosed_Spring_mounts/p1.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Open Spring Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-      // "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_mounts/p1.jpg",
-      "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_mounts/p2.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Open Spring Damper",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_damper/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/open_spring_damper/p2.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Heavy Duty Spring Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/heavy_duty_spring _mounts/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/heavy_duty_spring _mounts/p2.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Restrained Spring Mounts",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Restrained_Spring_Mounts/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Restrained_Spring_Mounts/p2.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Housed Spring Mounting",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Housed_spring_mounting/p1.jpg",
-        "../../images/upgrade_products/Vibration_Isolation/Spring_Based_Vibration_Isolator/Housed_spring_mounting/p2.jpg"
-      ],
-      divId: "three"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Close Spring Isolator",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Flexible_pipe_System/Fabric_Bellow/Fabric_Expansion_Joint/p2.jpg"
-      ],
-      divId: "three"
-    },
-
-
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Riser Isolator Support",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-      "../../images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Bellow/p1.jpg",
-      "../../images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Bellow/p2.jpg"
-      ],
-      divId: "four"
-    },
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Close Spring Isolator",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-      "../../images/upgrade_products/Flexible_pipe_System/Fabric_Bellow/Fabric_Expansion_Joint/p2.jpg"
-      ],
-      divId: "four"
-    },
-
-
-    { 
-      id: "card_"+ Math.ceil(Math.random()*1000000000),
-      title: "Wire Rope Suspension System",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      images: [
-        "../../images/upgrade_products/Vibration_Isolation/Wire_Rope_Suspension_System/p1.jpg"
-      ],
-      divId: "five"
-    },
-  ]
-
-  let productCard = ""
-  for(let i = 0; i<data?.length; i++){
-    const container = document.getElementsByClassName("product_grid_container_" + data[i]?.divId)?.[0]
-    if(container){
-      productCard = `<div class="grid-item px-0 product_card_outer">
-        <div class="card text-center">` + 
-          getCaraouselImages(data[i]?.images, data[i]?.id) + 
+    let productCard = "";
+    for (let i = 0; i < data?.length; i++) {
+      const container = document.getElementsByClassName(
+        "product_grid_container_" + data[i]?.divId
+      )?.[0];
+      if (container) {
+        productCard =
+          `<div class="grid-item px-0 product_card_outer">
+        <div class="card text-center">` +
+          getCaraouselImages(data[i]?.images, data[i]?.id) +
           `<div class="card-body">
             <h5 class="card-title">${data[i]?.title}</h5>
             <p class="card-text fs_12">${data[i]?.description}</p>
@@ -521,66 +613,114 @@
       
       <!-- quick view modal -->
         <div class="modal fade product_view_modal" id="exampleModal${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content br_6">
               <div class="modal-body pb-6 pt-6 text-left pe-6 ps-6">
                 <button type="button" class="btn-close product_detail_close_btn" data-bs-dismiss="modal" aria-label="Close"></button>
                   <div class="row mb-4">
-                    <div class="col-lg-12 text-center">
-                      <h3>${data?.[i]?.title}</h3>
-                      <div class="pro_200 m-auto">
-                          <img src="${data?.[i]?.images?.[0]}" alt="${data?.[i]?.title}" />
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <div class="col-lg-12 border-end">
+                          <div class="pro_200 float-start me-5">
+                            <img src="${data?.[i]?.images?.[0]}" alt="${data?.[i]?.title}" />
+                          </div>
+                          <h3>${data?.[i]?.title}</h3>
+                          <p class="fs_18 fw_500">Features and Benefits</p>
+                          <ul>
+                            <li>
+                             
+                              ${data?.[i]?.list1}
+                            </li>
+                            <li>${data?.[i]?.list1}</li>
+                            <li>${data?.[i]?.list2}</li>
+                            <li>${data?.[i]?.list3}</li>
+                            <li>${data?.[i]?.list4}</li>
+                            <li>${data?.[i]?.list5}</li>
+                            <li>${data?.[i]?.list6}</li>
+                          </ul>
                         </div>
+                       
+                      </diV>
+                      
+                      
+                      
+                    </div>
+                    <div class="col-lg-4">
+                      
+                     
+                      <p class="mb-1 feature_title">
+                        ${data?.[i]?.brand} 
+                      </p>
+                      <p class="mb-1">
+                        <span class="badge rounded-pill pills_primary">Derflex</span>
+                      </p>
+                      <p class="mb-1 feature_title">${data?.[i]?.shape}</p>
+                      <p class="mb-1">
+                        <span class="badge rounded-pill pills_primary">Square</span>
+                      </p>
+                      <p class="mb-1 feature_title">${data?.[i]?.materials}</p>
+                      <p class="mb-1">
+                        <span class="badge rounded-pill pills_primary">Neoprene</span>
+                      </p>
+                      <p class="mb-1 feature_title">${data?.[i]?.size}</p>
+                      <p class="mb-1">
+                        <span class="badge rounded-pill pills_primary">3’’ x 3’’ | Max - 18’’ x 18’</span>
+                      </p>
+                      <p class="mb-1 feature_title">${data?.[i]?.hardness}</p>
+                      <p class="mb-1">
+                        <span class="badge rounded-pill pills_primary">Hardness :- 60% - 65%</span>
+                      </p>
+                      <p class="mb-1 feature_title">${data?.[i]?.color}</p>
+                      <p class="mb-1">
+                        <span class="badge rounded-pill pills_primary">Black</span>
+                      </p>
                     </div>
                   </div> 
-                  <div class="row mx-0">
-                   
-                    <div class="col-lg-12 col-sm-8">
-                      <p class="fs_18 fw_500">Features and Benefits</p>
-                      <ul>
-                        <li>${data?.[i]?.list1}</li>
-                        <li>${data?.[i]?.list2}</li>
-                        <li>${data?.[i]?.list3}</li>
-                        <li>${data?.[i]?.list4}</li>
-                        <li>${data?.[i]?.list5}</li>
-                        <li>${data?.[i]?.list6}</li>
-                      </ul>
-                      <p class="mb-1">${data?.[i]?.brand}</p>
-                      <p class="mb-1">${data?.[i]?.shape}</p>
-                      <p class="mb-1">${data?.[i]?.materials}</p>
-                      <p class="mb-1">${data?.[i]?.size}</p>
-                      <p class="mb-1">${data?.[i]?.hardness}</p>
-                      <p class="mb-1">${data?.[i]?.color}</p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       <!-- end quick view modal -->
-      `
-      container.innerHTML += productCard;
+      `;
+        container.innerHTML += productCard;
+      }
     }
-    
-  }
-</script>
+  </script>
 
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- jquery cdn -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-<!-- bootsrap 5 js cdn -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- bootsrap 5 js cdn -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
 
-<!-- owl caousel js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- owl caousel js cdn -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
+  <!-- custom owl causel js  -->
+  <script src="../../js/owl-carousel.js"></script>
 
-<!-- custom owl causel js  -->
-<script src="../../js/owl-carousel.js"></script>
-
-<script src="../../js/main.js"></script>
-<!--products header -->
-<script src="../../js/header.js"></script>
+  <script src="../../js/main.js"></script>
+  <!--products header -->
+  <script src="../../js/header.js"></script>
 </html>

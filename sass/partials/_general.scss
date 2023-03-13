@@ -29,6 +29,10 @@
 .heading2-commn-text-white{
     @include heading2($color:$text-white);
 }
+// pills
+.pills_primary{
+    @include pills_commn();
+}
 // padding
 .p-10{
     padding: 0.714rem;

@@ -553,6 +553,13 @@ body, html {
   line-height: 1.1;
 }
 
+.pills_primary {
+  padding: 0.5rem;
+  background-color: rgb(187, 186, 186);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 .p-10 {
   padding: 0.714rem;
 }
@@ -813,6 +820,11 @@ h6 {
 
 .product_view_modal ul li {
   list-style: auto;
+}
+
+.feature_title {
+  color: #15133C;
+  font-weight: 600;
 }
 
 /*
