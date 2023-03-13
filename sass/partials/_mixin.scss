@@ -121,3 +121,13 @@
     min-height: $mn_height;
 }
 // end height
+
+// pills
+@mixin pills_commn($size:0.5rem,$bg-color:rgb(187, 186, 186),$font-size:0.8rem){
+   padding:$size;
+   background-color: $bg-color;
+   font-size: $font-size; 
+   font-weight: 400;
+}
+
+// end pills
