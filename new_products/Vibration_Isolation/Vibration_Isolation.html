@@ -363,7 +363,7 @@
     const data = [
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
-        title: "Bridge Bearing Pad",
+        title: "Deroflex Bridge Bearing Pad",
         description:
           "Some quick example text to build on the card title and make up the bulk of the card's content.",
         images: [
@@ -379,7 +379,7 @@
         list5:
           "Offers highest level of sound attenuation and vibration controller",
         list6: "Dimension can also be designed as per requirements",
-        brand: "Brand",
+        
         shape: "Shape",
         materials: "Materials",
         size: "Size",
@@ -606,19 +606,21 @@
           `<div class="card-body">
             <h5 class="card-title">${data[i]?.title}</h5>
             <p class="card-text fs_12">${data[i]?.description}</p>
+            <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary w-100 mb-3">Buy Now</a></span>
             <span class="btn btn-commn-bg-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal${i}">View More</span>
+             
           </div>
         </div>
       </div>
       
       <!-- quick view modal -->
         <div class="modal fade product_view_modal" id="exampleModal${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content br_6">
               <div class="modal-body pb-6 pt-6 text-left pe-6 ps-6">
                 <button type="button" class="btn-close product_detail_close_btn" data-bs-dismiss="modal" aria-label="Close"></button>
-                  <div class="row mb-4">
-                    <div class="col-lg-8">
+                  <div class="row mb-0">
+                    <div class="col-lg-9">
                       <div class="row">
                         <div class="col-lg-12 border-end">
                           <div class="pro_200 float-start me-5">
@@ -626,7 +628,8 @@
                           </div>
                           <h3>${data?.[i]?.title}</h3>
                           <p class="fs_18 fw_500">Features and Benefits</p>
-                          <ul>
+                          
+                          <ul class="mb-0">
                             <li>
                              
                               ${data?.[i]?.list1}
@@ -645,15 +648,8 @@
                       
                       
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                       
-                     
-                      <p class="mb-1 feature_title">
-                        ${data?.[i]?.brand} 
-                      </p>
-                      <p class="mb-1">
-                        <span class="badge rounded-pill pills_primary">Derflex</span>
-                      </p>
                       <p class="mb-1 feature_title">${data?.[i]?.shape}</p>
                       <p class="mb-1">
                         <span class="badge rounded-pill pills_primary">Square</span>

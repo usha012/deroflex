@@ -150,3 +150,11 @@
     color:$text-secondary;
     font-weight: 600;
 }
+.product_card_outer .buy_btn{
+    opacity: 0;
+}
+.product_card_outer:hover{
+    .buy_btn{
+        opacity: 1;
+    }
+}

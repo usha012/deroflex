@@ -827,6 +827,14 @@ h6 {
   font-weight: 600;
 }
 
+.product_card_outer .buy_btn {
+  opacity: 0;
+}
+
+.product_card_outer:hover .buy_btn {
+  opacity: 1;
+}
+
 /*
 ==========================
 Template: Industro
