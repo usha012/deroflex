@@ -21,9 +21,7 @@
     margin-bottom: 15px;
     position: relative;
     display: inline-block;
-    color:$text-primary;
-
-  
+    color:$text-primary; 
 }
 // list style one
 .list_styele_one{
@@ -158,3 +156,14 @@
         opacity: 1;
     }
 }
+// product modal
+ .modal_product_img{
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+ }
+

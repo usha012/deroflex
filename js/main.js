@@ -84,3 +84,10 @@ $('.clickme2 a').click(function(){
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => selectProductType("mediumProductGrid"),1000)
 }, false);
+
+
+
+// modal show more list 
+
+
+// end modal show more list

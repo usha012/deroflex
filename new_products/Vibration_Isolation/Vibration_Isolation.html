@@ -372,19 +372,17 @@
         divId: "one",
         list1:
           "Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
-        list2: "Easy field installation",
-        list3: "Design load of the bearing is equivalent to 10 M Pa",
-        list4:
-          "Steel laminates used in the bearings are in conformation with the IS : 2062 standards",
-        list5:
-          "Offers highest level of sound attenuation and vibration controller",
-        list6: "Dimension can also be designed as per requirements",
-        
+        list2: "Design load of the bearing is equivalent to 10 M Pa",
+        list3: "Offers highest level of sound attenuation and vibration controller.",
         shape: "Shape",
-        materials: "Materials",
+        materials: "Material",
+        reduces:"Reduces",
         size: "Size",
+        finishing:"Finishing",
+        colour:"Colour",
+        productType:"ProductType",
+        loadCapacity:"LoadCapacity",
         hardness: "Hardness",
-        color: "Colour",
       },
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
@@ -408,6 +406,7 @@
         ],
         divId: "two",
       },
+
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
         title: "Sandwich Mounting",
@@ -615,63 +614,95 @@
       
       <!-- quick view modal -->
         <div class="modal fade product_view_modal" id="exampleModal${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content br_6">
-              <div class="modal-body pb-6 pt-6 text-left pe-6 ps-6">
+              <div class="modal-body custm_scroll pb-6 pt-6 text-left pe-6 ps-6">
                 <button type="button" class="btn-close product_detail_close_btn" data-bs-dismiss="modal" aria-label="Close"></button>
                   <div class="row mb-0">
-                    <div class="col-lg-9">
-                      <div class="row">
-                        <div class="col-lg-12 border-end">
-                          <div class="pro_200 float-start me-5">
-                            <img src="${data?.[i]?.images?.[0]}" alt="${data?.[i]?.title}" />
-                          </div>
-                          <h3>${data?.[i]?.title}</h3>
-                          <p class="fs_18 fw_500">Features and Benefits</p>
-                          
-                          <ul class="mb-0">
-                            <li>
-                             
-                              ${data?.[i]?.list1}
-                            </li>
-                            <li>${data?.[i]?.list1}</li>
-                            <li>${data?.[i]?.list2}</li>
-                            <li>${data?.[i]?.list3}</li>
-                            <li>${data?.[i]?.list4}</li>
-                            <li>${data?.[i]?.list5}</li>
-                            <li>${data?.[i]?.list6}</li>
-                          </ul>
-                        </div>
-                       
-                      </diV>
-                      
-                      
-                      
+                    <div class="col-lg-5">
+                      <div class="float-start me-5 modal_product_img">
+                        <img src="${data?.[i]?.images?.[0]}" alt="${data?.[i]?.title}" />
+                      </div>
                     </div>
-                    <div class="col-lg-3">
-                      
-                      <p class="mb-1 feature_title">${data?.[i]?.shape}</p>
-                      <p class="mb-1">
-                        <span class="badge rounded-pill pills_primary">Square</span>
-                      </p>
-                      <p class="mb-1 feature_title">${data?.[i]?.materials}</p>
-                      <p class="mb-1">
-                        <span class="badge rounded-pill pills_primary">Neoprene</span>
-                      </p>
-                      <p class="mb-1 feature_title">${data?.[i]?.size}</p>
-                      <p class="mb-1">
-                        <span class="badge rounded-pill pills_primary">3’’ x 3’’ | Max - 18’’ x 18’</span>
-                      </p>
-                      <p class="mb-1 feature_title">${data?.[i]?.hardness}</p>
-                      <p class="mb-1">
-                        <span class="badge rounded-pill pills_primary">Hardness :- 60% - 65%</span>
-                      </p>
-                      <p class="mb-1 feature_title">${data?.[i]?.color}</p>
-                      <p class="mb-1">
-                        <span class="badge rounded-pill pills_primary">Black</span>
-                      </p>
+                    <div class="col-lg-4 border-end"> 
+                      <h3 class="f-w500">${data?.[i]?.title}</h3>
+                      <p class="fs_18 fw_500">Features and Benefits</p>
+                        <ul class="mb-3fs_14 ps-3">
+                          <li> 
+                            ${data?.[i]?.list1}
+                          </li>
+                          <li>${data?.[i]?.list2}</li>
+                          <li>${data?.[i]?.list3}</li> 
+                        </ul>  
+                         
+                    </div>
+                    <div class="col-lg-auto">
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.shape}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Square</span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.materials}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Rubber and steel</span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.reduces}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Vibrations CONTROL</span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.size}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">  3’’ x 3’’ | Max - 18’’ x 18’</span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.Finishing}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Galvanised </span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.colour}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Silver /Black </span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.productType}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Bridge Mounts</span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.LoadCapacity}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">Upto 4000 kgs</span>
+                        </p>
+                      </div>
+                      <div class="hidden_item">
+                        <p class="mb-1 feature_title">${data?.[i]?.hardness}</p>
+                        <p class="mb-1">
+                          <span class="badge rounded-pill pills_primary">60% -65% </span>
+                        </p>
+                      </div>
+                      <input id="moreButton" type="button" value="More" onclick="showMore()"/>
+                      <input id="lessButton" type="button" value="Less" onclick="showLess()"/>
                     </div>
                   </div> 
+                  
+                  <div class="row justify-content-center py-3">
+                    
+                    <div class="col-2 ps-3">
+                      <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
+                    </div>
+                  </div>
+                  
                   
                 </div>
               </div>
