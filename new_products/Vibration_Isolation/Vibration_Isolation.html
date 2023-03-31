@@ -360,6 +360,47 @@
       </div>`;
     };
 
+    const showMoreProperties = () => {
+      document.getElementById("showLessButton")?.classList.remove("d-none")
+      document.getElementById("showMoreButton")?.classList.add("d-none")
+      const properties = document.getElementsByClassName("products_property")
+      for(let i=0; i<properties?.length; i++) {
+        properties?.[i]?.classList?.remove("d-none")
+      }
+    }
+
+    const showLessProperties = () => {
+      document.getElementById("showMoreButton")?.classList.remove("d-none")
+      document.getElementById("showLessButton")?.classList.add("d-none")
+      const properties = document.getElementsByClassName("products_property")
+      for(let i=0; i<properties?.length; i++) {
+        if(i > 4){
+          properties?.[i]?.classList.add("d-none")
+        }
+      }
+    }
+
+    const getProductProperties = properties => {
+      let propertiesHtml = ""
+
+      for(let i = 0; i<properties?.length; i++){
+        let singleProperties = ""
+
+        for(let j= 0; j<properties?.[i]?.data?.length; j++){
+          singleProperties += `<span class="badge me-2 rounded-pill pills_primary">${properties?.[i]?.data?.[j]}</span>`
+        }
+
+        propertiesHtml += `<div class="products_property ${i>4 ? 'd-none': ''}">
+          <p class="mb-1 feature_title">${properties[i]?.name}</p>
+
+          <p class="mb-1">
+            ${singleProperties}
+          </p>
+        </div>`
+      }
+      return propertiesHtml
+    }
+
     const data = [
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
@@ -374,15 +415,26 @@
           "Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
         list2: "Design load of the bearing is equivalent to 10 M Pa",
         list3: "Offers highest level of sound attenuation and vibration controller.",
+        property: [
+          {name: "Shape", data: ["Square", "circle"]},
+          {name: "Material", data: ["Rubber and steel"]},
+          {name: "Reduces", data: ["Vibrations CONTROL"]},
+          {name: "Size", data: [`3’’ x 3’’ | Max - 18’’ x 18’`]},
+          {name: "Finishing", data: ["Galvanised"]},
+          {name: "Colour", data: ["Silver /Black"]},
+          {name: "ProductType", data: ["Bridge Mounts"]},
+          {name: "LoadCapacity", data: ["Upto 4000 kgs"]},
+          {name: "Hardness", data: ["60% -65%"]}
+        ],
         shape: "Shape",
-        materials: "Material",
-        reduces:"Reduces",
-        size: "Size",
-        finishing:"Finishing",
-        colour:"Colour",
-        productType:"ProductType",
-        loadCapacity:"LoadCapacity",
-        hardness: "Hardness",
+        materials: "",
+        reduces:"",
+        size: "",
+        finishing:"",
+        colour:"",
+        productType:"",
+        loadCapacity:"",
+        hardness: "",
       },
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
@@ -637,62 +689,9 @@
                          
                     </div>
                     <div class="col-lg-auto">
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.shape}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Square</span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.materials}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Rubber and steel</span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.reduces}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Vibrations CONTROL</span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.size}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">  3’’ x 3’’ | Max - 18’’ x 18’</span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.Finishing}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Galvanised </span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.colour}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Silver /Black </span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.productType}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Bridge Mounts</span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.LoadCapacity}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">Upto 4000 kgs</span>
-                        </p>
-                      </div>
-                      <div class="hidden_item">
-                        <p class="mb-1 feature_title">${data?.[i]?.hardness}</p>
-                        <p class="mb-1">
-                          <span class="badge rounded-pill pills_primary">60% -65% </span>
-                        </p>
-                      </div>
-                      <input id="moreButton" type="button" value="More" onclick="showMore()"/>
-                      <input id="lessButton" type="button" value="Less" onclick="showLess()"/>
+                      ${getProductProperties(data?.[i]?.property)}
+                      <p id="showMoreButton" class="small_text" onclick="showMoreProperties()">Show more</p>
+                      <p id="showLessButton" class="small_text d-none" onclick="showLessProperties()">Show less</p>
                     </div>
                   </div> 
                   
