@@ -425,16 +425,7 @@
           {name: "ProductType", data: ["Bridge Mounts"]},
           {name: "LoadCapacity", data: ["Upto 4000 kgs"]},
           {name: "Hardness", data: ["60% -65%"]}
-        ],
-        shape: "Shape",
-        materials: "",
-        reduces:"",
-        size: "",
-        finishing:"",
-        colour:"",
-        productType:"",
-        loadCapacity:"",
-        hardness: "",
+        ]
       },
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
@@ -446,17 +437,19 @@
         ],
 
         divId: "one",
+        
       },
 
       {
         id: "card_" + Math.ceil(Math.random() * 1000000000),
-        title: "Genset Mounts",
+        title: " Deroflex Genset Mounts",
         description:
           "Some quick example text to build on the card title and make up the bulk of the card's content.",
         images: [
           "../../images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Genset_mounts/p1.jpg",
         ],
         divId: "two",
+        list1:"The Genset  mounts are covered with metal body on the top and bottom to prevent any oil from entering and damaging the mounts. The generator mounts can be mounted on both external and internal generator frames. The compact design of the generator mounts provide easy fitting below the generator. The thick metallics base flange of the generator mounts ensures a long fatigue life"
       },
 
       {
@@ -679,27 +672,26 @@
                     <div class="col-lg-4 border-end"> 
                       <h3 class="f-w500">${data?.[i]?.title}</h3>
                       <p class="fs_18 fw_500">Features and Benefits</p>
-                        <ul class="mb-3fs_14 ps-3">
+                        <ul class="mb-3 fs_14 ps-3">
                           <li> 
                             ${data?.[i]?.list1}
                           </li>
                           <li>${data?.[i]?.list2}</li>
                           <li>${data?.[i]?.list3}</li> 
-                        </ul>  
-                         
+                        </ul>
+                        
+                          <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
+                              
                     </div>
                     <div class="col-lg-auto">
                       ${getProductProperties(data?.[i]?.property)}
-                      <p id="showMoreButton" class="small_text" onclick="showMoreProperties()">Show more</p>
-                      <p id="showLessButton" class="small_text d-none" onclick="showLessProperties()">Show less</p>
+                      <p id="showMoreButton" class="small_text cursor_pointer fs_18" onclick="showMoreProperties()">Show more</p>
+                      <p id="showLessButton" class="small_text d-none cursor_pointer fs_18" onclick="showLessProperties()">Show less</p>
                     </div>
                   </div> 
                   
-                  <div class="row justify-content-center py-3">
+                  <div class="row justify-content-center py-3"> 
                     
-                    <div class="col-2 ps-3">
-                      <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
-                    </div>
                   </div>
                   
                   

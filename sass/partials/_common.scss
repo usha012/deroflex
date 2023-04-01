@@ -139,7 +139,7 @@
 .product_view_modal{
     ul{
         li{
-            list-style: auto;
+            list-style: disc;
         }
     }
 }
@@ -158,8 +158,11 @@
 }
 // product modal
  .modal_product_img{
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
+
+    height: auto;
+    aspect-ratio: 4/3;
     img {
         width: 100%;
         height: 100%;
