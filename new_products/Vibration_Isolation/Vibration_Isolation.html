@@ -380,6 +380,22 @@
       }
     }
 
+    const getProductFeatures = features => {
+      if(!features?.length){
+        return ""
+      }
+
+      if(features?.length === 1){
+        return `<p>${features?.[0]}</p>`
+      }
+
+      let featuresHtml = ""
+      for(let i=0; i<features?.length; i++){
+        featuresHtml += `<li>${features?.[i]}</li>`
+      }
+      return `<ul class="mb-3 fs_14 ps-3">${featuresHtml}</ul>`
+    }
+
     const getProductProperties = properties => {
       let propertiesHtml = ""
 
@@ -411,10 +427,11 @@
           "../../images/upgrade_products/Vibration_Isolation/pad/Bridge_bearing_pad/p1.jpg",
         ],
         divId: "one",
-        list1:
+        features: [
           "Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
-        list2: "Design load of the bearing is equivalent to 10 M Pa",
-        list3: "Offers highest level of sound attenuation and vibration controller.",
+          "Design load of the bearing is equivalent to 10 M Pa",
+          "Offers highest level of sound attenuation and vibration controller."
+        ],
         property: [
           {name: "Shape", data: ["Square", "circle"]},
           {name: "Material", data: ["Rubber and steel"]},
@@ -434,6 +451,9 @@
           "Some quick example text to build on the card title and make up the bulk of the card's content.",
         images: [
           "../../images/upgrade_products/Vibration_Isolation/pad/Custom_design_pad/p1.jpg",
+        ],
+        features: [
+          "Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
         ],
 
         divId: "one",
@@ -672,21 +692,23 @@
                     <div class="col-lg-4 border-end"> 
                       <h3 class="f-w500">${data?.[i]?.title}</h3>
                       <p class="fs_18 fw_500">Features and Benefits</p>
-                        <ul class="mb-3 fs_14 ps-3">
-                          <li> 
-                            ${data?.[i]?.list1}
-                          </li>
-                          <li>${data?.[i]?.list2}</li>
-                          <li>${data?.[i]?.list3}</li> 
-                        </ul>
+                        ${getProductFeatures(data?.[i]?.features)}
                         
                           <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
                               
                     </div>
                     <div class="col-lg-auto">
                       ${getProductProperties(data?.[i]?.property)}
-                      <p id="showMoreButton" class="small_text cursor_pointer fs_18" onclick="showMoreProperties()">Show more</p>
-                      <p id="showLessButton" class="small_text d-none cursor_pointer fs_18" onclick="showLessProperties()">Show less</p>
+                      ${
+                        data?.[i]?.property?.length > 5
+                        ?
+                        ` <p id="showMoreButton" class="small_text cursor_pointer fs_18" onclick="showMoreProperties()">Show more</p>
+                          <p id="showLessButton" class="small_text d-none cursor_pointer fs_18" onclick="showLessProperties()">Show less</p>
+                        `
+                        :
+                        ""
+                      }
+                      
                     </div>
                   </div> 
                   
