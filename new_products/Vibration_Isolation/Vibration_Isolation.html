@@ -360,19 +360,41 @@
       </div>`;
     };
 
-    const showMoreProperties = () => {
-      document.getElementById("showLessButton")?.classList.remove("d-none")
-      document.getElementById("showMoreButton")?.classList.add("d-none")
-      const properties = document.getElementsByClassName("products_property")
+    const showMoreProperties = id => {
+      // document.getElementById("showLessButton")?.classList.remove("d-none")
+      // document.getElementById("showMoreButton")?.classList.add("d-none")
+      // const properties = document.getElementsByClassName("products_property")
+      // for(let i=0; i<properties?.length; i++) {
+      //   properties?.[i]?.classList?.remove("d-none")
+      // }
+      const modal = document.getElementById(`exampleModal${id}`)
+      const properties = modal.getElementsByClassName("products_property")
+      const showMoreButton = modal.getElementsByClassName("showMoreButton")?.[0]?.classList.add("d-none")
+      const showLessButton = modal.getElementsByClassName("showLessButton")?.[0]?.classList.remove("d-none")
       for(let i=0; i<properties?.length; i++) {
-        properties?.[i]?.classList?.remove("d-none")
+        if(i > 4){
+          properties?.[i]?.classList.remove("d-none")
+        }
       }
     }
 
-    const showLessProperties = () => {
-      document.getElementById("showMoreButton")?.classList.remove("d-none")
-      document.getElementById("showLessButton")?.classList.add("d-none")
-      const properties = document.getElementsByClassName("products_property")
+    const showLessProperties = id => {
+      // document.getElementById("showMoreButton")?.classList.remove("d-none")
+      // document.getElementById("showLessButton")?.classList.add("d-none")
+      // const properties = document.getElementsByClassName("products_property")
+      // for(let i=0; i<properties?.length; i++) {
+      //   if(i > 4){
+      //     properties?.[i]?.classList.add("d-none")
+      //   }
+      // }
+
+      // const product = document.getElementById(id)
+      // console.log(id, 4444444)
+      const modal = document.getElementById(`exampleModal${id}`)
+      const properties = modal.getElementsByClassName("products_property")
+      const showMoreButton = modal.getElementsByClassName("showMoreButton")?.[0]?.classList.remove("d-none")
+      const showLessButton = modal.getElementsByClassName("showLessButton")?.[0]?.classList.add("d-none")
+
       for(let i=0; i<properties?.length; i++) {
         if(i > 4){
           properties?.[i]?.classList.add("d-none")
@@ -396,7 +418,7 @@
       return `<ul class="mb-3 fs_14 ps-3">${featuresHtml}</ul>`
     }
 
-    const getProductProperties = properties => {
+    const getProductProperties = (properties, id) => {
       let propertiesHtml = ""
 
       for(let i = 0; i<properties?.length; i++){
@@ -406,7 +428,7 @@
           singleProperties += `<span class="badge me-2 rounded-pill pills_primary">${properties?.[i]?.data?.[j]}</span>`
         }
 
-        propertiesHtml += `<div class="products_property ${i>4 ? 'd-none': ''}">
+        propertiesHtml += `<div class="products_property property_${id} ${i>4 ? 'd-none': ''}">
           <p class="mb-1 feature_title">${properties[i]?.name}</p>
 
           <p class="mb-1">
@@ -899,7 +921,7 @@
             <h5 class="card-title">${data[i]?.title}</h5>
             <p class="card-text fs_12">${data[i]?.description}</p>
             <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary w-100 mb-3">Buy Now</a></span>
-            <span class="btn btn-commn-bg-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal${i}" onclick="showLessProperties()">View More</span>
+            <span class="btn btn-commn-bg-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal${i}" onclick="showLessProperties(${i})">View More</span>
              
           </div>
         </div>
@@ -926,12 +948,12 @@
                               
                     </div>
                     <div class="col-lg-auto">
-                      ${getProductProperties(data?.[i]?.property)}
+                      ${getProductProperties(data?.[i]?.property, data?.[i]?.id)}
                       ${
                         data?.[i]?.property?.length > 5
                         ?
-                        ` <p id="showMoreButton" class="small_text cursor_pointer fs_18" onclick="showMoreProperties()">Show more</p>
-                          <p id="showLessButton" class="small_text d-none cursor_pointer fs_18" onclick="showLessProperties()">Show less</p>
+                        ` <p id="showMoreButton" class="showMoreButton small_text cursor_pointer fs_18" onclick="showMoreProperties(${i})">Show more</p>
+                          <p id="showLessButton" class="showLessButton small_text cursor_pointer fs_18" onclick="showLessProperties(${i})">Show less</p>
                         `
                         :
                         ""
