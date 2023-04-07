@@ -361,12 +361,6 @@
     };
 
     const showMoreProperties = id => {
-      // document.getElementById("showLessButton")?.classList.remove("d-none")
-      // document.getElementById("showMoreButton")?.classList.add("d-none")
-      // const properties = document.getElementsByClassName("products_property")
-      // for(let i=0; i<properties?.length; i++) {
-      //   properties?.[i]?.classList?.remove("d-none")
-      // }
       const modal = document.getElementById(`exampleModal${id}`)
       const properties = modal.getElementsByClassName("products_property")
       const showMoreButton = modal.getElementsByClassName("showMoreButton")?.[0]?.classList.add("d-none")
@@ -379,17 +373,6 @@
     }
 
     const showLessProperties = id => {
-      // document.getElementById("showMoreButton")?.classList.remove("d-none")
-      // document.getElementById("showLessButton")?.classList.add("d-none")
-      // const properties = document.getElementsByClassName("products_property")
-      // for(let i=0; i<properties?.length; i++) {
-      //   if(i > 4){
-      //     properties?.[i]?.classList.add("d-none")
-      //   }
-      // }
-
-      // const product = document.getElementById(id)
-      // console.log(id, 4444444)
       const modal = document.getElementById(`exampleModal${id}`)
       const properties = modal.getElementsByClassName("products_property")
       const showMoreButton = modal.getElementsByClassName("showMoreButton")?.[0]?.classList.remove("d-none")
