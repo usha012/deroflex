@@ -36,30 +36,22 @@
   <!-- end new header -->
 
 <div class="productview_wrapper">
-    <div class="row product_view_bg">
-
+    <div class="row ">
+        <img id="pageBannerImage" src="" class="mainBannerImg" />
     </div>
     <div class="container">
         <div class="row py-5">
             <div class="col-lg-4">
                 <div class="pro_400 m-auto">
-                    <img src="../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg"> 
-
+                    <img src="" id="pageImage" /> 
                 </div>
             </div>
             <div class="col-lg-8">
-                <h3>lorem</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ad voluptatibus. Nam officiis voluptates numquam, et labore dolorum, amet nemo qui rerum eum mollitia inventore dicta vel illum ab dolorem.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ad voluptatibus. Nam officiis voluptates numquam, et labore dolorum, amet nemo qui rerum eum mollitia inventore dicta vel illum ab dolore
-
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ad voluptatibus. Nam officiis voluptates numquam, et labore dolorum, amet nemo qui rerum eum mollitia inventore dicta vel illum ab dolore
-                </p>
+                <h3 id="pagetitle"></h3>
+                <p id="pageDescription"></p>
                 <div class="ask_ques_wrapper">
                     <p class="mb-0"><a href="#">Ask Question</a>/ <a href="#">This product</a></p>
-
                 </div>
-
             </div>
 
         </div>
@@ -69,14 +61,13 @@
     <section class="product_list">
         <!-- container-1 -->
             <div class="container px-0 py-4 list container-list">
-                <div class=" product_grid_container">
+                <div class="product_grid_container" id="product_grid_container">
                     <div class="grid-item px-0 product_card_outer">
                         <div class="card text-center">
                             <div id="Stainless_Steel_Hose" class="carousel slide product_card_slider" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg" class="d-block" alt="Stainless Steel Hose">
-                                    
                                 </div>
                                 <div class="carousel-item">
                                     <img src="../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p2.jpeg" class="d-block" alt="Stainless Steel Hose">
@@ -95,10 +86,10 @@
                                 </button>
                             </div>
                             <div class="card-body">
-                            <h5 class="card-title">Stainless Steel Hose   </h5>
-                            <p class="card-text fs_12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- <a href="#" class="btn btn-commn-bg-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</a> -->
-                            <a href="./product_view_detail.html" target="_blank" class="btn btn-commn-bg-primary w-100">View More</a>
+                                <h5 class="card-title">Stainless Steel Hose   </h5>
+                                <p class="card-text fs_12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <!-- <a href="#" class="btn btn-commn-bg-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</a> -->
+                                <a href="./product_view_detail.html" target="_blank" class="btn btn-commn-bg-primary w-100">View More</a>
                             </div>
                             <!-- end quick view modal -->
                         </div>
@@ -441,7 +432,6 @@
             <p>*Advantage of derflex stainless steel.</p>
         </div>
     </div>
-
 </div>
 
     
@@ -547,13 +537,89 @@
 
     
 </body>
-
 <script>
-  const displayCard = id => {
-    console.log(id, 12121)
-    $('.container-list').removeClass('active').addClass('hide');
-    $('#'+id).addClass('active').removeClass('hide');
-  }
+    const data = {
+        pageBannerImage : "../../images/upgrade_products/Flexible_Hose/product_view_bg.jpg",
+        pageImage: "../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg",
+        pagetitle: "Lorem Ipsum",
+        pageDescription: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ad voluptatibus. Nam officiis voluptates numquam, et labore dolorum, amet nemo qui rerum eum mollitia inventore dicta vel illum ab dolorem.",
+        pageCards: [
+            {
+                id: "Stainless_Steel_Hose",
+                title: "Stainless Steel Hose",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                images: [
+                    "../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg",
+                    "../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p2.jpeg",
+                ],
+                link: "./product_view_detail.html"
+            },
+            {
+                id: "Flange_With_Bellow_Welded",
+                title: "Flange With Bellow Welded",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                images: [
+                    "../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p1.jpg",
+                    "../../images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p2.jpg",
+                ],
+                link: "./Rubber_Expansion_Bellow/double_arch_expansion_joint.html"
+            },
+        ]
+    }
+
+    document.getElementById("pageBannerImage").src=data?.pageBannerImage
+    document.getElementById("pageImage").src=data?.pageImage
+    document.getElementById("pagetitle").innerText=data?.pagetitle
+    document.getElementById("pageDescription").innerText=data?.pageDescription
+
+    const CardHtml = (data) => {
+
+        let cardHtmlImages = ""
+        for(let i = 0; i< data?.images?.length; i++){
+            cardHtmlImages += `<div class="carousel-item ${i === 0 ? 'active' : ' '}">
+                <img src="${data?.images?.[i]}" class="d-block" alt="Stainless Steel Hose" />
+            </div>`
+        }
+
+        return `
+            <div class="grid-item px-0 product_card_outer">
+                <div class="card text-center">
+                    <div id="${data?.id}" class="carousel slide product_card_slider" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            ${cardHtmlImages}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${data?.id}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#${data?.id}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Stainless Steel Hose</h5>
+                        <p class="card-text fs_12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="${data?.link}" target="_blank" class="btn btn-commn-bg-primary w-100">View More</a>
+                    </div>
+                </div>
+            </div>
+        `
+    } 
+
+
+    let allCardsData = ""
+    for(let j = 0; j<data?.pageCards?.length; j++ ){
+        
+        allCardsData += CardHtml(data?.pageCards?.[j])
+    }
+
+
+
+
+    document.getElementById("product_grid_container").innerHTML=allCardsData
+
+
 </script>
 
 <!-- jquery cdn -->
